@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AORTA: Adding Organizational Reasoning to Agents</title>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css"> -->
+		<link rel="stylesheet" href="../material-wfont.min.css">
+				
+		<link rel="stylesheet" href="../styles.css" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+		#publications > ul { padding-left: 0 !important; }
+		#publications ul { list-style-type: none; }
+		#publications ul li span { display: inline; font-family: inherit; font-style: inherit; }
+		</style>
+	</head>
+	<body>
+	<div class="jumbotron" style="overflow:auto;">
+			<center>
+			<h2>AORTA: Adding Organizational Reasoning to Agents</h2>
+			
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">		
+					<!-- Nav tabs -->
+					<ul class="nav nav-pills" role="tablist">
+					  <li class="active"><a href="#aorta" role="tab" data-toggle="tab">AORTA Framework</a></li>
+					  <li><a href="#mc" role="tab" data-toggle="tab">Model Checking</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+					  <div class="tab-pane fade in active" id="aorta">
+					  	
+						<h3>AORTA: Adding Organizational Reasoning to Agents</h3>
+						<p style="text-align: justify;">AORTA is an organizational reasoning component that can be integrated into the agent's reasoning mechanism, allowing it to reason about (and act upon) regulations specified by an organizational model using simple reasoning rules. AORTA assumes a preexisting organization, is independent from the agent, and focus on reasoning rules that specify how the agent reasons about the specification. The organization is completely separated from the agent, meaning that the architecture of the agent is independent from the organizational model, and the agent is free to decide on how to use AORTA in its reasoning. The separation is possible because AORTA is tailored based on the organizational model and its ontology.</p>
+
+						<h4>The Organizational Reasoning Component</h4>
+						<p style="text-align: justify;">AORTA provides organizational reasoning capabilities to agents, allowing the agents to reason about organizational matters. Organizational reasoning is divided into <i>organizational option generation</i>, <i>organizational action deliberation</i> and <i>organizational coordination</i>. An organizational option describes something that the agent should consider, e.g. committing to an objective or enacting a role. An organizational action is the execution of an organizational option: actually enacting a role or committing to an organizational objective. This creates the expectation (for the organization) that the agent should somehow believe it is able to achieve it, either by itself, by cooperating with other agents, or by delegating it. Deceitful agents might know that they cannot achieve an organizational objective, but will commit to it anyway to disturb the organization or to achieve their private goals. Organizational coordination is organization-level coordination, which is based on the agent's mental state.
+
+						<img src="img/orc.png" style="width: 100%;" alt="Organizational Reasoning Component" />
+						
+						<p style="text-align: justify;">The <i>organizational reasoning component</i> of AORTA is shown above. The agent (assumed here to be a BDI agent) has a mental state, which is coupled to AORTA. Based on the mental state, AORTA can determine organizational options, and use organizational actions to change the mental state. The coordination component sends messages using the mailbox, and incoming messages can change the organizational structure. </p>
+
+						<h4>AORTA GUI</h4>
+						<p style="text-align:justify;">The AORTA GUI provides information about each agent's mental state (left) and the transition rules that have been executed (right).</p>
+
+						<img src="img/gui.png" style="width: 100%;" alt="The AORTA GUI" />
+
+					  </div>
+					  <div class="tab-pane fade" id="mc">
+					  	<h3>Model checking AORTA</h3>
+					
+						<p>We have modified the Agent Java Path Finder (AJPF) to make it possible to model check agents with an AORTA component. This means we can verify properties such as </p>
+
+						<center><p>&#9671; org(<i>ag</i>, rea(<i>ag</i>, <i>role</i>)),</p></center>
+						
+						<p>i.e., eventually, agent <i>ag</i> has the organizational belief rea(<i>ag</i>, <i>role</i>). The model checker is available as part of the AORTA system, which can be downloaded from Github using the link above. 
+						</p>
+
+						<p>The modelchecker works as a JPF plugin. It furthermore includes a build-configuration that creates a jar with all dependencies. This jar (in the folder <tt>standalone</tt>) can be run as follows:
+						</p>
+
+    					<center><p><tt>java -jar aorta-modelchecker.jar AIL-file [PSL-file] [p=Propertyname] [m=Modelfile] [-save]</tt></p></center>
+
+						<p>If no PSL-file is provided, the system is executed normally. Otherwise, modelchecking using JPF is performed. The jar should be executed in the working directory of the system to be verified. To model check a specific property in the PSL-file, use <tt>p=Propertyname</tt>. To generate a model of the entire system (use with precaution, can get quite large), use <tt>p=Propertyname m=Modelfile -save</tt> (will be generated using the property specified by <tt>Propertyname</tt>). To use the model file afterwards instead of running the system, use <tt>m=Modelfile</tt>.</p>
+
+						<h4>Setup</h4>
+						<p>The system relies on JPF and should therefore be setup as follows:</p>
+						<ol>
+							<li>Download and unzip AORTA</li>
+							<li>Install JPF-Core (download and build from JPF repository)</li>
+							<li>Edit site.properties in ~/.jpf to include the following line:
+						     
+						        <p><center><tt>mcapl = [Parent of AORTA project dir]/aorta/ajpf</tt></center></p>
+						    </li>
+							<li>Run the JAR file as specified above to verify the system in AIL-file using all the properties in PSL-file.</li>
+						</ol>
+					  </div>
+					</div>
+					
+				</div>
+				<div class="col-md-5">
+					<h3>Get AORTA</h3>
+					<p>AORTA is developed in Java. It has been integrated with <i><a href="http://jason.sf.net/">Jason</a></i>. 
+
+					<h4>Examples</h4>
+					<ul>
+						<li><a href="writingpaper/writingpaper.jar">Writing paper</a> [<a href="writingpaper/writingPaper.jnlp">jnlp</a>].</li>
+						<li><a href="bw4t.zip">First Responders in Blocks World for Teams</a>.</li>
+					</ul>
+
+					<h4>Source code</h4>
+					<p>AORTA is open source. The source can be obtained on Github:</p>
+					<ul>
+						<li> <a href="https://github.com/andreasschmidtjensen/aorta">AORTA</a> </li>
+					</ul>
+
+					<section id="publications">
+						<h3>Publications</h3>
+						<ul>
+							<li><span><a href="http://link.springer.com/chapter/10.1007/978-3-319-14484-9_7">The AORTA Architecture: Integrating Organizational Reasoning in <i>Jason</i></a>.</span>
+								 Andreas Schmidt Jensen, Virginia Dignum &amp; Jørgen Villadsen. In Engineering Multi-Agent Systems, volume 8758 of Lecture Notes in Computer Science, p. 127-145. 2014.<br/>
+								 <ul>
+								 	<li><span>Workshop version: <a href="../pdf/articles/emas-2014.pdf">The AORTA Architecture: Integrating Organizational Reasoning in <i>Jason</i></a>.</span>
+									Andreas Schmidt Jensen, Virginia Dignum &amp; Jørgen Villadsen. In 2nd EMAS Workshop Proceedings, p. 112-128. 2014.</li>
+								 </ul>
+							</li>
+							<li><span><a href="http://aamas2014.lip6.fr/proceedings/aamas/p1493.pdf">AORTA: Adding Organizational Reasoning to Agents</a>.</span>
+							Andreas Schmidt Jensen &amp; Virginia Dignum. In Proceedings of AAMAS 2014, p. 1493-1494. 2014.</li>
+						</ul>
+					</section>
+
+					<section id="other">
+						<h3>Other material</h3>
+						<ul>
+							<li><a href="../pdf/poster/aamas2014-poster.pdf">AORTA poster for AAMAS 2014</a></li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>	
+
+	    <div class="navbar navbar-fixed-bottom" style="min-height: 0; background: #eee;">
+	      <div class="container" style="padding: 10px 0;">
+	        <p class="text-muted" style="margin: 0;"><a href="../">Andreas Schmidt Jensen</a>. 
+	         <script>
+				var d = new Date(document.lastModified);
+				var curr_date = d.getDate();
+				var curr_month = d.getMonth() + 1; //Months are zero based
+				var curr_year = d.getFullYear();
+				document.write(curr_date + "/" + curr_month + "-" + curr_year);
+			</script>.</p>
+	      </div>
+	    </div>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-45167974-1', 'dtu.dk');
+			ga('send', 'pageview');
+
+			// Javascript to enable link to tab
+			var url = document.location.toString();
+			if (url.match('#')) {
+			    $('.nav-pills a[href=#'+url.split('#')[1]+']').tab('show') ;
+			} 
+
+			// Change hash for page-reload
+			$('.nav-pills a').on('shown', function (e) {
+			    if(history.pushState) {
+			        history.pushState(null, null, e.target.hash); 
+			    } else {
+			        window.location.hash = e.target.hash; //Polyfill for old browsers
+			    }
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
+
+#container-fluid {
+	max-width: 1500px;
+}
+
+@media (min-width: 769px) {
+	.row-fluid > .span-fixed-sidebar {
+		margin-left: 320px;
+	}
+}
+@media (max-width: 979px) {
+	.row-fluid > .span-fixed-sidebar {
+		width: auto;
+	}
+}
+
+.navbar {
+	font-family: sans-serif;
+}
+
+body {
+	font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;	
+	padding-bottom: 180px;
+}
+.well {
+	margin-bottom: -20px;
+}
+
+#publications  li {	
+	font-style: italic;
+	margin-top: 10px;
+}
+#publications li > span {
+	display: block;
+	font-style: normal;
+	font-family: sans-serif;
+}
+#publications li > span a {
+	color: #084F8B;
+	text-decoration: underline;
+}
+
+#events li {
+	margin-top: 10px;
+}
+
+.row > div { text-align: justify; }

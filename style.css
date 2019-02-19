@@ -1,0 +1,44 @@
+* {
+	font-family: 'Playfair Display', serif;
+}
+
+code.highlighter-rouge {
+    position: relative;
+    left: -15%;
+    text-align: right;
+}
+.cv strong {
+    position: relative;
+    left: -10%;
+    font-style: unset;
+    color: #6c757d;
+    font-weight: bolder;
+}
+.cv em {
+	display: block;
+}
+
+.cv ul {
+	padding: 0;
+	margin-top: -10px;
+}
+
+.cv li {
+	display: block;
+}
+
+.cv h2 {
+	border-bottom: 1px solid #dee2e6;
+}
+
+.cv blockquote {
+	border-left: .25em solid #17a2b8;
+    padding: 0 1em;
+}
+
+.cv blockquote ul {
+	padding-inline-start: 40px;
+}
+.cv blockquote li {
+	display: list-item;
+}

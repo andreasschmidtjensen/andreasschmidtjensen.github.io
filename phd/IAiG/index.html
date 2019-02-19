@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Intelligent Agents in Games</title>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css"> -->
+		<link rel="stylesheet" href="../material-wfont.min.css">
+				
+		<link rel="stylesheet" href="../styles.css" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+		#publications ul { padding-left: 0; list-style-type: none; }
+		#publications ul li span { display: inline; font-family: inherit; font-style: inherit; }
+		</style>
+	</head>
+	<body>
+	<div class="jumbotron" style="overflow:auto;">
+			<center>
+			<h2>Intelligent Agents in Games</h2>
+			
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">		
+					<h3>Programming Agents in StarCraft: Brood War</h3>
+
+					<p>This project is concerned with the implementation of intelligent agents in games. As a use case we consider StarCraft: Brood War<sup>[1]</sup> (SCBW), a real-time strategy game by Blizzard. SCBW does not come with an official API for integrating artificial intelligence, but this is made possible using BWAPI<sup>[2]</sup>, a C++ framework that provides methods for manipulating the entities in SCBW. </p>
+
+					<p>We have succesfully implemented a bridge between SCBW and the agent programming languages supporting the environment interface standard (EIS) using JNI-BWAPI<sup>[3]</sup>, which allows implementation of AI in SCBW using Java.</p>
+
+					<p>The implementation is made by Christian Kaysø-Rørdam as his master's thesis project, and integrates the solution with Jason<sup>[4]</sup>.</p>
+
+					<h4>Quick Setup</h4>
+					<p>See the <a href="https://github.com/andreasschmidtjensen/scbw-mas">GitHub page</a> and the <a href="https://github.com/andreasschmidtjensen/scbw-mas/wiki">wiki</a>.
+
+					<h4>References</h4>
+					<ol>
+						<li> <a href="http://us.blizzard.com/en-us/games/sc/">StarCraft: Brood War</a> </li>
+						<li> <a href="https://code.google.com/p/bwapi/">BWAPI</a> </li>
+						<li> <a href="https://code.google.com/p/jnibwapi/">JNI-BWAPI</a> </li>
+						<li> <a href="http://jason.sourceforge.net/">Jason</a> </li>
+					</ol>
+
+				</div>
+				<div class="col-md-5">
+					<h4>Source code</h4>
+					<p>The EIS interface for SCBW is open source and available at GitHub:</p>
+					<ul>
+						<li> Browse source code <a href="https://github.com/andreasschmidtjensen/scbw-mas">here</a>. </li>
+					</ul>
+
+					<section id="publications">
+						<h3>Publications</h3>
+						<ul>
+							<li><span><a href="http://www2.compute.dtu.dk/pubdb/views/publication_details.php?id=6802">Implementing Intelligent Agents in Games</a>.</span> Christian Kaysø-Rørdam. MSc Thesis. DTU Compute, 2014.</li>
+						</ul>
+					</section>
+
+				</div>
+			</div>
+		</div>	
+		
+	    <div class="navbar navbar-fixed-bottom" style="min-height: 0; background: #eee;">
+	      <div class="container" style="padding: 10px 0;">
+	        <p class="text-muted" style="margin: 0;"><a href="../">Andreas Schmidt Jensen</a>. 
+	         <script>
+				var d = new Date(document.lastModified);
+				var curr_date = d.getDate();
+				var curr_month = d.getMonth() + 1; //Months are zero based
+				var curr_year = d.getFullYear();
+				document.write(curr_date + "/" + curr_month + "-" + curr_year);
+			</script>.</p>
+	      </div>
+	    </div>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-45167974-1', 'dtu.dk');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>

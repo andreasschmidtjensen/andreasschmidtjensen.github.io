@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" 
+      href="writingPaper.jnlp" 
+      codebase="http://www2.compute.dtu.dk/~ascje/AORTA/writingpaper/" >
+
+<information>
+  <title>Jason+AORTA: Writing paper</title>
+  <vendor>Open Source</vendor>
+  <homepage href="http://jason.sf.net"/>
+  <description>Jason+AORTA Example</description>
+  <description kind="short">Jason is an AgentSpeak interpreter. AORTA is an organizational reasoning component.</description>
+  <description kind="one-line">The Writing Paper Scenario</description>
+  <!--<icon href="Jason-GMoreau-Icon.jpg"/>-->
+  <offline-allowed/>
+</information>
+<security><all-permissions /></security>
+<resources>
+  <j2se version="1.5+" href="http://java.sun.com/products/autodl/j2se"/>
+  <jar href="writingpaper.jar" />
+
+</resources>
+<application-desc main-class="aorta.jason.infra.AortaLauncher" />
+</jnlp>
