@@ -25,7 +25,7 @@ title: Curriculum Vitae
 
 #### LINK Mobility
 
-`2017— ‏‏‎  ‏‏‎  ‏‏‎  ‏‏‎`
+`2017—now`
 **Head of Mobile Intelligence Technology**
 > I am the chief scientist in LINK Mobility, responsible for all things technology, analytics, statistics and AI in LINK Mobility Group. All of this is consolidated in the Mobile Intelligence area, where I work closely together with my commercial counterpart. 
 >
@@ -74,7 +74,7 @@ _Technical University of Denmark_
 Thesis: "The AORTA Reasoning Framework: Adding Organizational Reasoning to Agents"
 
 `2008-2010`
-**Master of Science in Engineering, Computer Science and Engineering**
+**M.Sc.Eng., Computer Science and Engineering**
 _Technical University of Denmark_
 Specialization: Efficient and Intelligent Software
 Thesis: "Multi-Agent Systems: An Investigation of the Advantages of Making Organizations Explicit"
@@ -98,16 +98,16 @@ Danish, English, Norwegian, Swedish
 
 ## Courses and Further Education
 
-` ‏‏‎  ‏‏‎  ‏‏‎  ‏‏‎  ‏‏‎ 2018`
+`2018`
 **Deep Learning (Coursera)**
 
-` ‏‏‎  ‏‏‎  ‏‏‎  ‏‏‎  ‏‏‎ 2017`
+`2017`
 **Data Science Specialization (Coursera)**
 
-` ‏‏‎  ‏‏‎  ‏‏‎  ‏‏‎  ‏‏‎ 2016`
+`2016`
 **Big Data (IDA Learning)**
 
-` ‏‏‎  ‏‏‎  ‏‏‎ < 2010`
+`< 2010`
 **At Technical University of Denmark**
 * Logic in Artificial Intelligence and Multi-Agent Systems
 * Artificial Intelligence and Multi-Agent Systems
