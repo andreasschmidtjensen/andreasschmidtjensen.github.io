@@ -13,6 +13,30 @@
     text-align: center;
 }
 
+.post p {
+	text-align: justify
+}
+.post img {
+	display: block;
+}
+.post .source {
+	font-size: 60%;
+	display: block;
+	margin: 0 auto 1rem;
+}
+
+.post div.highlight {
+	background-color: #6c757d!important;
+    margin: 1rem;
+    padding: 1rem;
+}
+.post pre.highlight {
+	margin-bottom: 0;
+}
+.post .highlight code {
+	color: #fff !important;
+}
+
 @media only screen
 and (min-device-width: 768px) {
 	.cv code.highlighter-rouge {

@@ -1,0 +1,23 @@
+---
+layout: default
+title: Rubber Duck
+---
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    inlineMath: [['$','$']]
+  }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<div class="mx-auto w-75 mt-5">
+	<h2 class="jumbotron-heading">{{ page.blog_title }}</h2>
+	<span class="post-date">{{ page.date | date_to_string }}</span>
+	<p class="lead text-muted text-justify">{{ page.tldr }}</p>
+</div>
+<div class="mx-auto w-75 post">
+  {{ content }}
+</div>
