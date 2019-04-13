@@ -12,7 +12,7 @@ As a very simple example, I have used RL to solve the [Tower of Hanoi](https://e
 For example, here's a solution for a 6 disks Tower:
 
 <div class="w-50 mx-auto">
-    <img alt="Iterative algorithm solving a 6 disks Tower of Hanoi" src="{{ site.baseurl }}/img/Iterative_algorithm_solving_a_6_disks_Tower_of_Hanoi.gif/512px-Iterative_algorithm_solving_a_6_disks_Tower_of_Hanoi.gif" class="w-75 mx-auto" />
+    <img alt="Iterative algorithm solving a 6 disks Tower of Hanoi" src="{{ site.baseurl }}/img/Iterative_algorithm_solving_a_6_disks_Tower_of_Hanoi.gif" class="w-75 mx-auto" />
     <p class="w-75 mx-auto source"><a href="https://commons.wikimedia.org/wiki/File:Iterative_algorithm_solving_a_6_disks_Tower_of_Hanoi.gif">Source</a></p>
 </div>
 

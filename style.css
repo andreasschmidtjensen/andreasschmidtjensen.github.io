@@ -36,6 +36,10 @@
 .post .highlight code {
 	color: #fff !important;
 }
+.post video {
+	margin: 0 auto 1rem;
+	display: block;
+}
 
 @media only screen
 and (min-device-width: 768px) {
