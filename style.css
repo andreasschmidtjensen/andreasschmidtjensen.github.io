@@ -18,6 +18,8 @@
 }
 .post img {
 	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
 }
 .post .source {
 	font-size: 60%;

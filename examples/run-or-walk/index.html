@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <style>
+        .walking {
+          background-color: green;
+        }
+        .running {
+          background-color: red;
+        }
+
+        body {
+          color: white;
+          font-family: 'Roboto', sans-serif;
+        }
+      </style>
+  </head>
+  <body class="walking">        
+    <h1 id="result">Test</h1>
+
+    <div id="data"></div>
+    <ul id="error"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/1.1.0/tf.min.js"></script>
+    <script>
+      const POINTS_PER_SAMPLE = 3;
+      const SAMPLE_SIZE = 12;
+
+
+      function scale2(val, range) {
+        return (val - range[0]) / (range[1] - range[0]);
+      }
+
+      function scale(data) {
+        const acc_x = [-5.3505, 5.6033];
+        const acc_y = [-3.299, 2.688];
+        const acc_z = [-3.7538, 1.6403];
+        const gyro_x = [-4.4306, 4.8742];
+        const gyro_y = [-7.4647, 8.498];
+        const gyro_z = [-9.48, 11.2662];
+
+        return [
+          scale2(data[0], acc_x),
+          scale2(data[1], acc_y),
+          scale2(data[2], acc_z)/*,
+          scale2(data[3], gyro_x),
+          scale2(data[4], gyro_y),
+          scale2(data[5], gyro_z)*/
+        ];
+      }
+
+      async function predict(model, data) {
+        if (data.length !== POINTS_PER_SAMPLE * SAMPLE_SIZE) {
+          throw "Exactly " + POINTS_PER_SAMPLE * SAMPLE_SIZE + " datapoints required!"
+        }
+        return await model.predict(tf.tensor([data]));
+      }
+
+      $(async function() {
+        let currentOrientation = []        
+        let data = [];
+        let lastCapture = new Date();
+
+        const model = await tf.loadLayersModel("/examples/run-or-walk/model.json");
+
+        if ('ondevicemotion' in window) {
+          window.addEventListener("devicemotion", function(event){
+            if (currentOrientation.length == 3 && (new Date() - lastCapture) > 100) {
+              lastCapture = new Date();
+
+              data = data.concat(
+                scale([event.accelerationIncludingGravity.x, event.accelerationIncludingGravity.y, event.accelerationIncludingGravity.z]/*.concat(currentOrientation)*/)
+              );
+
+              if (data.length > POINTS_PER_SAMPLE * SAMPLE_SIZE) {
+                data = data.slice(POINTS_PER_SAMPLE);
+
+                predict(model, data).then(function(result) {
+                  const walking = result.arraySync()[0] < 0.5;
+
+                  if (walking) {
+                    $("body").addClass("walking");
+                    $("body").removeClass("running");
+                  } else {
+                    $("body").addClass("running");
+                    $("body").removeClass("walking");                    
+                  }
+
+                  $("#result").html(walking ? "WALKING" : "RUNNING");
+                });
+              }
+
+
+              let text = "[<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+              for (let i = 0; i < data.length; i++) {
+                text += data[i].toFixed(3) + ",";
+                if ((i + 1) % POINTS_PER_SAMPLE == 0) {
+                  text += "<br/>"; 
+                  if (i < data.length- 1) text += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                }
+              }
+              text += "]";
+              $("#data").html(text);
+            }
+
+            console.log("Accelerometer: "
+              + event.accelerationIncludingGravity.x + ", "
+              + event.accelerationIncludingGravity.y + ", "
+              + event.accelerationIncludingGravity.z
+            );
+          });
+        } else {
+          $("#error").append("<li>DeviceMotionEvent is not supported</li>");
+        }
+
+        if ('ondeviceorientation' in window) {
+          window.addEventListener("deviceorientation", function(event){
+            currentOrientation = [event.beta * Math.PI/180, event.gamma * Math.PI/180, event.alpha * Math.PI/180];
+            console.log("Magnetometer: "
+              + event.alpha + ", "
+              + event.beta + ", "
+              + event.gamma
+            );
+          });
+        } else {
+          $("#error").append("<li>DeviceOrientationEvent is not supported</li>");
+        }
+      });
+    </script>
+  </body>
+</html> 
