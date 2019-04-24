@@ -20,6 +20,7 @@
 	display: block;
 	margin: 0 auto;
 	border-radius: 5px;
+	max-width: 100%;
 }
 .post .source {
 	font-size: 60%;
