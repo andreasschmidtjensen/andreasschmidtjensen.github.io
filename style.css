@@ -14,7 +14,7 @@
 }
 
 .post p {
-	text-align: justify
+	text-align: justify;
 }
 .post img {
 	display: block;
@@ -44,6 +44,10 @@
 	display: block;
 }
 
+#portrait-mini {
+	display: none;
+}
+
 @media only screen
 and (min-device-width: 768px) {
 	.cv code.highlighter-rouge {
@@ -62,12 +66,24 @@ and (min-device-width: 768px) {
 	}
 }
 
+@media only screen
+and (max-device-width: 767px) {
+	#portrait {
+		display: none;
+	}
+	#portrait-mini {
+		display: unset;
+	}
+}
+
 .cv strong, .cv p.lead {
 	color: #000;
+	text-align: unset;
 }
 
 .cv p {
     color: #6c757d;
+    text-align: justify;
 }
 
 .cv em {

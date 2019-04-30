@@ -3,33 +3,47 @@ layout: cv
 title: Curriculum Vitae
 ---
 
-<div class="row my-5">
+<div class="row mt-5">
     <div class="col-sm">
+        <div id="portrait">
+            <img src="img/asj.jpg" class="rounded-circle border float-right ml-3 mb-2" />
+        </div>
         <h2 class="border-0">Andreas Schmidt Jensen</h2>
         <p class="lead">Master of Science in Engineering, PhD</p>
         <p>Date of birth: September 2, 1986</p>
         <p>
-            <i>Experienced software engineer and data scientist. Strong theoretical foundation with a solid understanding of business. I excel at bringing visions to life - both at a strategic and implementation level.</i>
+            Experienced software engineer and data scientist. Strong theoretical foundation with a solid understanding of business. I excel at bringing visions to life - both at a strategic and implementation level.
+        </p>
+        <p>
+            I strongly believe in Artificial Intelligence and Machine Learning as game changers for data-driven companies, but also acknowledge that model-building is only a small part of this. It is paramount to understand the business needs, the domain and the expected value creation in order to understand 1) what kind of model is needed and 2) how well this model needs to perform. Why go for a 99,999% accurate model, if 95% does the trick? I have a pragmatic approach to problem solving and I want to deliver value, not just a theoretical performance increase.
         </p>
         <p>
             I live in Albertslund just outside Copenhagen with my wife, Eva and our daughters, Rebekka og Leonora.
         </p>
+        <p class="float-right"><i>Last update: April 30, 2019</i></p>
     </div>
-    <div class="col-sm">
-        <p class="float-right" style="clear: both;">Last update: February 19, 2019</p>
-        <img src="img/asj.jpg" class="rounded-circle border float-right" style="clear: both;" />
+</div>
+<div class="row mb-5">
+    <div id="portrait-mini" class="col" style="text-align: right">
+        <img src="img/asj.jpg" class="rounded-circle border" />
     </div>
 </div>
 
 ## Work Experience
 
+#### NIVO Performance
+`2019—now`
+**Lead Software Architect**
+> NIVO Performance develops sensors and platform for horses and riders to predict and prevent injuries and to track and analyze training sessions.
+> My main responsibilities include using Machine Learning and AI to make sense of the collected sensor data, building algorithms for running on hardware and building the NIVO  backend.
+
 #### LINK Mobility
 
-`2017—now`
-**Head of Mobile Intelligence Technology**
-> I am the chief scientist in LINK Mobility, responsible for all things technology, analytics, statistics and AI in LINK Mobility Group. All of this is consolidated in the Mobile Intelligence area, where I work closely together with my commercial counterpart. 
+`2017—2019`
+**Lead Data Scientist and Head of LINK Intelligence Technology**
+> As lead data scientist in LINK Mobility, I was responsible for all things technology, analytics, statistics and AI in LINK Mobility Group. All of this is consolidated in the Mobile Intelligence area, where I worked closely together with my commercial counterpart. 
 >
-> My work includes:
+> My work included:
 > - Consolidation of business data in data lake
 > - Statistical analyses
 > - AI and Machine learning
