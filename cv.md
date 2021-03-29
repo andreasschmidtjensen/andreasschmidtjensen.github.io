@@ -31,9 +31,17 @@ title: Curriculum Vitae
 
 ## Work Experience
 
-#### NIVO Performance
-`2019—now`
-**Lead Software Architect**
+#### Zibra Group
+
+`2020-2021`
+**ZibraLabs: ML Engineer (R&D)**
+> ZibraLabs was created to allow creative minds with skills in software, AI, 3d printing, mechanics and hardware to build and experiment with ideas that should hopefully lead to business opportunities. In ZibraLabs I had multiple responsibilities:
+> - Team lead for our AI initiative. Responsible for our AI vision. We experiment with various ideas and projects, like a chatbot for matching problems in larger organizations with competences in employees. We try as much as possible to "fail fast" by building prototypes that can show the potential of an idea in its entirety (e.g. from user input to actual recommendation), rather than just verifying parts of an idea (e.g. the model itself).
+> - Algorithms for NIVO Performance: Building efficient algorithms in Numpy for analyzing full horse training sessions. Using machine learning for gait classification and dressage exercise classification within the algorithms.
+> - Backend for NIVO Performance along with some frontend and Android app development. 
+
+`2019—2020`
+**NIVO Performance: Lead Software Architect**
 > NIVO Performance develops sensors and platform for horses and riders to predict and prevent injuries and to track and analyze training sessions.
 > My main responsibilities include using Machine Learning and AI to make sense of the collected sensor data, building algorithms for running on hardware and building the NIVO  backend.
 
