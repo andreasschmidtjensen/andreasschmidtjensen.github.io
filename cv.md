@@ -20,7 +20,7 @@ title: Curriculum Vitae
         <p>
             I live in Albertslund just outside Copenhagen with my wife, Eva and our daughters, Rebekka og Leonora.
         </p>
-        <p class="float-right"><i>Last update: April 30, 2019</i></p>
+        <p class="float-right"><i>Last update: March 29, 2021</i></p>
     </div>
 </div>
 <div class="row mb-5">
