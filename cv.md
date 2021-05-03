@@ -31,6 +31,10 @@ title: Curriculum Vitae
 
 ## Work Experience
 
+#### Microsoft
+`2021-now`
+**Principal Data and Applied Scientist Manager**
+
 #### Zibra Group
 
 `2020-2021`
