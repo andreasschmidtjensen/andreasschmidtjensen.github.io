@@ -127,6 +127,12 @@ Danish, English, Norwegian, Swedish
 
 ## Courses and Further Education
 
+`2020`
+**Computer Vision 1: Introduction (Python)**
+
+`2018`
+**Loop AI Certified Professional**
+
 `2018`
 **Deep Learning (Coursera)**
 
