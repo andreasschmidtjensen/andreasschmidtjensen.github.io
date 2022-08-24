@@ -18,9 +18,9 @@ title: Curriculum Vitae
             I strongly believe in Artificial Intelligence and Machine Learning as game changers for data-driven companies, but also acknowledge that model-building is only a small part of this. It is paramount to understand the business needs, the domain and the expected value creation in order to understand 1) what kind of model is needed and 2) how well this model needs to perform. Why go for a 99,999% accurate model, if 95% does the trick? I have a pragmatic approach to problem solving and I want to deliver value, not just a theoretical performance increase.
         </p>
         <p>
-            I live in Albertslund just outside Copenhagen with my wife, Eva and our daughters, Rebekka og Leonora.
+            I live in Allerød north of Copenhagen with my wife, Eva and our daughters, Rebekka og Leonora.
         </p>
-        <p class="float-right"><i>Last update: March 29, 2021</i></p>
+        <p class="float-right"><i>Last update: August 24, 2022</i></p>
     </div>
 </div>
 <div class="row mb-5">
@@ -34,6 +34,9 @@ title: Curriculum Vitae
 #### Microsoft
 `2021-now`
 **Principal Data and Applied Scientist Manager**
+> Working in M365 Core as part of Microsoft Development Center Norway. We empower people and organizations to achieve more by building AI powered, intelligent productivity tools. The group I am working in focuses on people, what they do and who they collaborate with. 
+> 
+> I lead a team of 10 people, both data scientists and software engineers, that build models that help people collaborate more effectively. Our services are part of the M365 suite (Outlook, Word, Excel, etc) which is used by millions of people every day.
 
 #### Zibra Group
 
