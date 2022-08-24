@@ -20,6 +20,12 @@ title: Curriculum Vitae
         <p>
             I live in Allerød north of Copenhagen with my wife, Eva and our daughters, Rebekka og Leonora.
         </p>
+        <p>
+            <b>Email: </b> andreas.s.jensen@gmail.com
+        </p>
+        <p>
+            <b>Phone: </b> +45 61 20 60 20
+        </p>
         <p class="float-right"><i>Last update: August 24, 2022</i></p>
     </div>
 </div>
