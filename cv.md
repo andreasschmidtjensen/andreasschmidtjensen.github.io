@@ -61,7 +61,7 @@ title: Curriculum Vitae
 > NIVO Performance develops sensors and platform for horses and riders to predict and prevent injuries and to track and analyze training sessions.
 > My main responsibilities include using Machine Learning and AI to make sense of the collected sensor data, building algorithms for running on hardware and building the NIVO  backend.
 
-#### LINK Mobility
+#### LINK Mobility (previously Responsfabrikken)
 
 `2017—2019`
 **Lead Data Scientist and Head of LINK Intelligence Technology**
@@ -80,18 +80,16 @@ title: Curriculum Vitae
 **Director of Technology (CTO), LINK Mobility Denmark**
 > In 2016, Responsfabrikken was acquired by LINK Mobility Group. I continued in my role as CTO until 2017.
 
-#### Responsfabrikken    
-
 `2015—2016`
-**CTO**
+**CTO, Responsfabrikken**
 > After completing my PhD, I returned as CTO. I was responsible for a team of 6 developers (backend and frontend). I worked closely together with our sales team and project management team. 
 
 `2010—2012`
-**Systems Developer**
+**Systems Developer, Responsfabrikken**
 > After graduating, I was part of the team that designed and implemented our first SMS flow-builder, and was responsible for improving and maintaining our SMS gateway. 
 
 `2009—2010`
-**Java Developer**
+**Java Developer, Responsfabrikken**
 > I started at Responsfabrikken as a student developer, working part-time. 
 
 <p class="lead">Other work experience</p>
