@@ -6,7 +6,7 @@ title: Curriculum Vitae
 <div class="row mt-5">
     <div class="col-sm">
         <div id="portrait">
-            <img src="img/asj.jpg" class="rounded-circle border float-right ml-3 mb-2" />
+            <img src="img/andreas.jpg" class="rounded-circle border float-right ml-3 mb-2" />
         </div>
         <h2 class="border-0">Andreas Schmidt Jensen</h2>
         <p class="lead">Master of Science in Engineering, PhD</p>
