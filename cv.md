@@ -18,6 +18,9 @@ title: Curriculum Vitae
             I strongly believe in Artificial Intelligence and Machine Learning as game changers for data-driven companies, but also acknowledge that model-building is only a small part of this. It is paramount to understand the business needs, the domain and the expected value creation in order to understand 1) what kind of model is needed and 2) how well this model needs to perform. Why go for a 99,999% accurate model, if 95% does the trick? I have a pragmatic approach to problem solving and I want to deliver value, not just a theoretical performance increase.
         </p>
         <p>
+            I thrive when learning new technologies, building a prototype and showing that something new can create value. I love when projects span across both software and hardware, enabling me to combine my passion in data science, software engineering and prototyping.
+        </p>
+        <p>
             I live in Allerød north of Copenhagen with my wife, Eva and our daughters, Rebekka og Leonora.
         </p>
         <p>
