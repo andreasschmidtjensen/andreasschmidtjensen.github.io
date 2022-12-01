@@ -41,7 +41,7 @@ title: Curriculum Vitae
 ## Work Experience
 
 #### Microsoft
-`2021-now`
+`2021-2022`
 **Principal Data and Applied Scientist Manager**
 > Working in M365 Core as part of Microsoft Development Center Norway. We empower people and organizations to achieve more by building AI powered, intelligent productivity tools. The group I am working in focuses on people, what they do and who they collaborate with. 
 > 
