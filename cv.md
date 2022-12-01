@@ -29,7 +29,7 @@ title: Curriculum Vitae
         <p>
             <b>Phone: </b> +45 61 20 60 20
         </p>
-        <p class="float-right"><i>Last update: August 24, 2022</i></p>
+        <p class="float-right"><i>Last update: December 1, 2022</i></p>
     </div>
 </div>
 <div class="row mb-5">
