@@ -34,7 +34,7 @@ title: Curriculum Vitae
 </div>
 <div class="row mb-5">
     <div id="portrait-mini" class="col" style="text-align: right">
-        <img src="img/asj.jpg" class="rounded-circle border" />
+        <img src="img/andreas.jpg" class="rounded-circle border" />
     </div>
 </div>
 
