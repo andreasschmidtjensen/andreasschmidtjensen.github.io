@@ -48,7 +48,7 @@ title: Curriculum Vitae
 #### Okapi ApS
 `2023-2024`
 **Founder**
-Okapi is a deep tech startup (founded 2023), recording solid growth in the advisory business since inception and a headcount fast approaching two digits. Focus is rapidly shifting from advisory towards product and venture development with the defence-tech/dual-use technologies now being spun out under the Falanx-brand.
+> Okapi is a deep tech startup (founded 2023), recording solid growth in the advisory business since inception and a headcount fast approaching two digits. Focus is rapidly shifting from advisory towards product and venture development with the defence-tech/dual-use technologies now being spun out under the Falanx-brand.
 
 #### Microsoft
 `2021-2022`
