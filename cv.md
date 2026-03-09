@@ -40,6 +40,16 @@ title: Curriculum Vitae
 
 ## Work Experience
 
+#### LINK Mobility A/S
+`2023-`
+**Senior Software Engineer**
+> I am currently working as a senior software engineer in LINK Mobility A/S.
+
+#### Okapi ApS
+`2023-2024`
+**Founder**
+Okapi is a deep tech startup (founded 2023), recording solid growth in the advisory business since inception and a headcount fast approaching two digits. Focus is rapidly shifting from advisory towards product and venture development with the defence-tech/dual-use technologies now being spun out under the Falanx-brand.
+
 #### Microsoft
 `2021-2022`
 **Principal Data and Applied Scientist Manager**
